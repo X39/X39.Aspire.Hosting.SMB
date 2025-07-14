@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <IsAspireProjectResource>true</IsAspireProjectResource>
+        <Description>SMB support for .NET Aspire.</Description>
+
+
+        <PackageId>X39.Aspire.Hosting.SMB</PackageId>
+        <Authors>X39</Authors>
+        <Title>X39.Aspire.Hosting.SMB</Title>
+        <PackageDescription>SMB support for .NET Aspire.</PackageDescription>
+        <SupportUrl>https://github.com/X39/cs-x39-util/issues</SupportUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/X39/cs-x39-util</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <IncludeSymbols>true</IncludeSymbols>
+        <IncludeSources>true</IncludeSources>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <IsTrimable>true</IsTrimable>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <DefaultLanguage>en-US</DefaultLanguage>
+        <PackageTags>aspire integration hosting smb samba</PackageTags>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting" Version="9.3.2"/>
+        <PackageReference Include="SMBLibrary" Version="1.5.4.1"/>
+        <PackageReference Include="X39.Util" Version="1.0.0.52"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+</Project>
